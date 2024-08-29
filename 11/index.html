@@ -1,84 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BOX MODEL-1</title>
-        <meta charset="utf-8" />
 
-        <style type="text/css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title>CSS</title>
 
-            body{
-                margin: 0;
-                background: #61bd8c ;
-            }
-            #header{
-                background-color:lightblue;
-                text-align: center;
-            }
+    <style>
+        .caixa{
+            background: lightgoldenrodyellow;
+            width: 300px;
+            height: 140px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
 
-            #conteudo{
-                background: #FFFFFF ;
-                padding: 10px;
-                width: 900px;
-                margin: 30px auto;
-            }
-            .caixa{
-                background: red;
-                margin: 10px;
-                width: 100px;
-                height: 100px;
-                color: #FFFFFF;
-            }
-            #relativo{
-                background-color: lightcoral;
-                float: left;
-                width: 33.33%;
-                height: 100px;
-            }
-            #absoluto{
-                background-color:lightgreen;
-                float: left;
-                width: 33.33%;
-                height: 100px;
-            }
-            #fixo{
-                background-color: lightcoral;
-                float: left;
-                width: 33.33%;
-                height: 100px;
-            }
-            #rodape{
-                background-color:lightpink;
-                text-align: center;
-            }
-        </style>
-    </head>
-
-    <body>
-        <span>Container body</span>
-        <div id="header">
-            Header 100%
+        }
+        .sep{
+            display:flex;
+            flex-wrap: wrap;
+            width: 200px;
+        }
+        .p1{
+            background-color:lemonchiffon;
+            width: 100px;
+            height: 100px;
+            border-radius: 300px 300px 0px 300px;
+        }
+        .p2{
+            background-color:lightpink;
+            width: 100px;
+            height: 100px;
+            border-radius: 300px 300px 300px 0px;
+        }
+        .p3{
+            background-color:lightsteelblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 300px 0px 300px 300px;
+        }
+        .p4{
+            background-color:lightsalmon;
+            width: 100px;
+            height: 100px;
+            border-radius: 0px 300px 300px 300px;
+        }
+        .c1{
+            background-color:lightgreen;
+            width: 100px;
+            height: 100px;
+            border-radius: 180px 0px 0px 0px;
+        }
+        .c2{
+            background-color:lightseagreen;
+            width: 100px;
+            height: 100px;
+            border-radius: 0px 180px 0px 0px;
+        }
+        .c3{
+            background-color:blueviolet;
+            width: 100px;
+            height: 100px;
+            border-radius: 0px 0px 0px 180px;
+        }
+        .c4{
+            background-color:deeppink;
+            width: 100px;
+            height: 100px;
+            border-radius: 0px 0px 180px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <fieldset>
+            <legend>Dados Pessoais;</legend>
+            <p>Nome:<input type="text" /></p>
+            <p>E-mail:<input type="text" /></p>
+        </fieldset>
+    </div>
+    <div class="sep">
+        <div class="p1">
         </div>
-
-        <div id="conteudo">
-            Container div
-
-            <div id="relativo" class="caixa">
-                Relativo
-            </div>
-
-            <div id="absoluto" class="caixa">
-                Absoluto
-            </div>
-
-            <div id="fixo" class="caixa">
-                Fixo
-            </div>
+        <div class="p2">
         </div>
-
-        <div id="rodape">
-            Footer 100%
+        <div class="p3">
         </div>
-    </body>
-
-
+        <div class="p4">
+        </div>
+    </div>
+    <div class="sep">
+        <div class="c1">
+        </div>
+        <div class="c2">
+        </div>
+        <div class="c3">
+        </div>
+        <div class="c4">
+        </div>
+    </div>
+</body>
 </html>
